@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,401,500,501,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Ben.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            font-family: 'General Sans', sans-serif;
+            background-color: #0e0e0eec;
+            line-height: 1.5rem;
+        }
+
+        .container{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            color: #fff;
+        }
+
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .head p a{
+            margin-top: 0;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            background-color: #ffffff;
+            padding: 4px 8px;
+            border: 1px solid #ff001f;
+            border-radius: 5px;
+        }
+        
+        .head a:hover{
+            color: #ffffff;
+            background-color: #000000;
+            transition: 1s;
+        }
+        
+        h1{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        .intro{
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .intro img{
+            border-radius: 50%;
+            width: 150px;
+        }
+
+        .intro-p{
+            padding: 0 15px;
+        }
+
+        .intro-p span{
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .intro-p p{
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            opacity: 70%;
+        }
+        
+        .article {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 15px;
+            border: 2px solid #ffffff4e;
+        }
+        
+        .steps{
+            width: 43%;
+            display: inline-block;
+            background-color: #ffffff15;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .steps div{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 20px;
+            align-items: center;
+        }
+        
+        .article h2{
+            padding-bottom: 8px;
+        }
+        
+        .article h3{
+            margin-top: 20px;
+            padding-bottom: 8px;
+        }
+
+        .article p{
+            font-size: 14px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            opacity: 70%;
+        }
+        
+        .faq-section{
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #000000f5;
+            border-radius: 16px;
+        }
+        
+        .faq-section h4{
+            font-size: 25px;
+        }
+        
+        .faqs .faq{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            gap: 30px;
+        }
+
+        .faqs p{
+            font-size: 14px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            opacity: 70%;
+        }
+        
+        .q-a1{
+            width: 43%;
+            padding: 15px;
+            background-color: #ffffff19;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .q-a{
+            display: flex;
+            align-items: baseline;
+        }
+
+        strong{
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        .q-a1 hr{
+            margin-top: 2px;
+            margin-bottom: 5px;
+        }
+        
+        .q-a span{
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        
+        h5{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        h5 a{
+            color: #000000;
+            text-decoration: none;
+            background-color: #ffffff;
+            padding: 8px;
+            border: 2px solid #ff001f;
+            border-radius: 8px;
+        }
+        
+        h5 a:hover{
+            color: #ffffff;
+            background-color: #000000;
+            transition: 1s;
+        }
+        
+        footer{
+            margin-top: 50px;
+            width: 100%;
+            color: #d7d7eabd;
+            background-color: #000000f5;
+            text-align: center;
+        }
+
+        footer p{
+            font-size: 13px;
+            opacity: 70%;
+            padding: 20px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 13px 0;
+        }
+
+        .icons .fa{
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            padding: 15px;
+            border: 3px solid #9c9caaae;
+            background-color: #1e1e218f;
+            border-radius: 50%;
+        }
+        
+        .icons .fa:hover{
+            background-color: #ffffff;
+            transition: 1s;
+        }
+
+        .fa-facebook{
+            color: blue;
+   
+        }
+
+        .fa-twitter{
+            color: blue;
+        }
+
+        .fa-instagram{
+            color: magenta;
+        }
+
+        .fa-whatsapp{
+            color: rgb(5, 252, 5);
+        }
+
+        @media (max-width: 800px){
+            .container{
+                max-width: 800px;
+            }
+            
+            .q-a1{
+                width: 100%;
+            }
+            
+            .steps{
+                width: 100%;
+            }
+        }
+        
+        @media(max-width: 375px){
+            .container{
+                max-width: 320px;
+            }
+            
+            .head h1{
+                font-size: 21px;
+             }
+             
+             .head p{
+                font-size: 6px;
+             }
+            
+            .q-a1{
+                width: 100%;
+             }
+        
+            .steps{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+             }
+        
+             .article {
+                padding: 13px 8px;
+             }
+        
+             .steps div{
+                padding: 10px 8px;
+             }
+             }
+    </style>
+
+    <title>Kadiri Benjamin</title>
+</head>
+
+
+<body>
+    <header class="container">
+        <div class="head">
+            <h1>Introduction</h1>
+            <p><a href="Question3.html" target="_blank">Week 2 Task</a></p>
+        </div>
+        <hr>
+        <div class="intro">
+            <img src="images/img.jpg" alt="Kadiri Benjamin">
+            <div class="intro-p">
+                <span>Kadiri Benjamin</span>
+                <p>A native of Edo state currently residing in Lagos (well, I atually grew up in lagos).<br>I am a Part-time student studying Economics in the faculty of social sciences, Lagos state University, Ojo. I also work part-time in order to cover my schooling expenses.</p>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <div class="article">
+                <div class="steps">
+                    <div>
+                        <h2>My Tech Journey</h2>
+                        <img src="images/R.jpeg" style="width: 140px; height: 120px; border-radius: 14px" alt="baby steps">
+                    </div>
+            <article>
+                <p>I have always had a passion for tech, but wasn't quite a part of it till December last year(2023) when a friend of mine revealed to me how he had to start working as a web designer even though he graduated as an artist(He studied art in school). He further explained that it is only with luck and connection that one is able to gain employment in nigeria, and as such had to practice designing to gain a job. When he eventually got the job as a web designer, he started learning more(web designing) on-the-job. He made me realize that tech offers the opportunity to work anywhere and advised me to learn a tech skill so i don't have to rely solely on my school qualifications alone. I started learning web design early this year, sometime around early January(2024), but along the way got interested in the building and functionality of the design; instead of just designing for someone else to build the website, why can i not build the website? And like that, I was swept into the world of web development.</p>
+            </article>
+            </div>
+            
+            <div class="steps">
+                    <div>
+                        <h2 style="font-size: 20px;">My Upskill Objective & Aspirations</h2>
+                        <img src="images/R.png" style="width: 140px; height: 120px; border-radius: 14px" alt="baby steps">
+                    </div>
+            <article>
+                <p>I joined the Genesys Upskill program by virtue of luck through a friend of mine who saw that learning web development was giving me a tough time, and also knew i could not pay for actual classes. He told me about Upskill and how it was a free program and how joining would present me with opportunities and, with luck, maybe even gain me actual employment.</p>
+                <p>The aim is to start with Genesys Upskill, then i pay for and receive a certificate of completion after completing the course. From there, I'll apply for and join the learnable program and after completing the program and receiving my certificate, hopefully as i've heard, be able to learn and work there as an intern, and hopefully again, be retained to work as a frontend developer.</p>
+                <p>The End goal is to become a fullstack developer though, but i guess just like everyone else, I need to start somewhere first to get to somewhere. And I believe it's a step by step process; the more i practice and work on frontend projects, the better i get. And the better i get, the easier it is to integrate myself into backend and learn it also, step by step.</p>
+            </article>
+            </div>
+            </div>   
+        </section>
+        
+        <section class="faqs">
+            <div class="faq-section">
+            <h4>FAQ</h4>
+            <div class="faq">
+                <div class="q-a1">
+                  <div class="q-a">
+                    <strong>Q:</strong><span style="font-weight: 600; color: #fff;">Why choose a career in tech?</span>
+                  </div>
+                    <hr>
+                  <div class="q-a">
+                  <strong>A:</strong><span style="opacity: 50%;">Well, as it stands today, tech is pretty much in everything we do; from the most basic commercial activities to the biggest industries in the world, everything revolves around tech. And tech has a place for everyone, as far as you acquire a skill in tech, then you can work anywhere.</span>
+                  </div>
+                </div>
+            
+                <div class="q-a1">
+                  <div class="q-a">
+                    <strong>Q:</strong><span style="font-weight: 600; color: #fff;">Out of various fields in tech, why web development?</span>
+                  </div>
+                    <hr>
+                  <div class="q-a">
+                    <strong>A:</strong><span style="opacity: 50%;">I could say i have a passion for web development, but that would be a lie! I didn't choose web development, I think the reverse is the case; Web development chose me. The career path i was going to choose was that of an Economist, but then i was introduced to canva, then from canva i got into web design and was later introduced to figma. Along the line, while designing on figma, I got to understand that we had to be precise about the elements and attributes, that it was these tools that developers would use in building the webpages and also make it function according to the client's satisfaction. I just got interested in actually building my small starter design into a webpage and i decided to give it a try, so i watched some youtube videos and was actually able to build my dummy webpage. it wasn't easy, but i found the challenge very welcoming and the occassional frustrations quite enjoyable.<br>I LOVED THE CHALLENGE !!</span>
+                  </div>
+                </div>
+            
+                <div class="q-a1">
+                  <div class="q-a">
+                    <strong>Q:</strong><span style="font-weight: 600; color: #fff;">What has been the most challenging part of my decision of going into web development?</span>
+                  </div>
+                    <hr>
+                  <div class="q-a">
+                    <strong>A:</strong><span style="opacity: 50%;">Working as well as schooling as a part-time student is a nightmare; the bills are sky-high! And the stress of blending work hours and school hours has been very difficult(I've had to resign from a couple of workplaces because school and work hours kept clashing and my bosses were not happy at all). Enters coding... whaaaat??!!!!<br>I love coding and learning to code too; I love the brain work and brain tease, I love the challenge. Coding takes time, it takes practice, and i'm sure that's my greatest challenge; the fact that i don't have enough time to learn and do something i actually love. Instead, I have to spend more time doing jobs i'm not so happy with, giving me so little time to do what i love. But what can I do? I have bills to pay.<br>Hopefully, i'll be able to get at least a frontend job after i complete the learnable program and finally start doing something i actually love. Hopefully, Amen!</span>
+                  </div>
+                </div>
+            
+                <div class="q-a1">
+                  <div class="q-a">
+                    <strong>Q:</strong><span style="font-weight: 600; color: #fff;">How is the journey so far?</span>
+                  </div>
+                    <hr>
+                  <div class="q-a">
+                    <strong>A:</strong><span style="opacity: 50%;">Well, I'm currently still trying to master CSS(it's not easy, even though it's easy). There are just so many properties and rules in CSS. I tried venturing into javascript late last month, but then i came across a project where i saw amazing CSS animations, and i was stunned. I just had to come back; why learn half if you can go all the way? I need to know this thing like the back of my hand! Let me take my time with CSS, Javascript and the rest isn't going anywhere.<br>I dabbled a bit in PHP also, but in the end i realized i need to learn one at a time and actually be able to boast of my background before venturing into another.</span>
+                  </div>
+                </div>
+            
+                <div class="q-a1">
+                  <div class="q-a">
+                    <strong>Q:</strong><span style="font-weight: 600; color: #fff;">What is my Goal?</span>
+                  </div>
+                    <hr>
+                  <div class="q-a">
+                    <strong>A:</strong><span style="opacity: 50%;">I am a Nigerian! And there's a saying that "You don't plan your life in Nigeria, Nigeria plans your life for you." My Goal was to be an Economist, but looking at the flow of the presnt Nigerian economy, one can not put all his fishes in one basket. And if you're going to use another basket, it should be a basket that you can take anywhere and would be able to sustain you; Hence my decision to go into tech(web development). There is no where in the world where tech is not appreciated, and there's no industry where the services of a programmer or developer is not needed. Everyone needs to go social to advertise and sell their products to maximize profits; whatever and whichever it may be, i'll be there either as a developer or as an economist to render my services. With these skillset, I don't see a scenario where i'm losing; except i'm not committed to my ambitions and goals.</span>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h5><a href="Question3.html" target="_blank" referrerpolicy="no-referrer">This week's Task from Upskill</a></h5>
+        </section>
+                
+    </main>
+    
+    <footer>
+        <p>Visit any of my socials to know more about me✌🏽</p>
+
+   <div class="icons">
+      <a href="https://www.facebook.com/thebenconcepts?mibextid=ZbWKwL" target="_blank" referrerpolicy="no-referrer"><i class="fa fa-facebook"></i></a>
+      
+      <a href="https://www.instagram.com/thebenconcepts?igsh=aGV6OXlsMnAyaDI5" target="_blank" referrerpolicy="no-referrer"><i class="fa fa-instagram"></i></a>
+      
+      <a href="https://x.com/Benja__mean?t=JnxYgR0Pkdmydb333Qlvbw&s=09" target="_blank" referrerpolicy="no-referrer"><i class="fa fa-twitter"></i></a>
+      
+      <a href="https://wa.me/qr/KCLG526L5XJTH1" target="_blank" referrerpolicy="no-referrer"> <i class="fa fa-whatsapp"></i></a>
+     
+   </div>
+   
+   <p>Made with love by Benjamin.</p>
+    </footer>
+    
+</body>
+</html>
